@@ -6,6 +6,7 @@ import (
 	"io"
 )
 
+//LoggingSettingsは、ログの設定を行う
 func LoggingSettings(logFile string) {
 	logfile, err := os.OpenFile(logFile, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil {
